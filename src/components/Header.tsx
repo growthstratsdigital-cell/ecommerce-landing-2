@@ -1,0 +1,28 @@
+import React from "react";
+import { IMAGES } from "@/assets/images";
+const Header: React.FC = () => {
+  return <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center gap-3">
+            {/* Growth Strats Official Logo */}
+            <img 
+              src={IMAGES.GROWTH_STRATS_LOGO} 
+              alt="Growth Strats Logo" 
+              className="h-10 w-10 object-contain rounded-lg"
+            />
+            <span className="text-xl md:text-2xl font-extrabold tracking-tight text-foreground">
+              Growth Strats
+            </span>
+          </div>
+          
+          {/* Optional: Add contact info or social links */}
+          <div className="hidden lg:flex items-center gap-4 text-sm text-muted-foreground">
+            
+            <span>✉️ info@growthstrats.com</span>
+          </div>
+        </div>
+      </div>
+    </header>;
+};
+export default Header;
